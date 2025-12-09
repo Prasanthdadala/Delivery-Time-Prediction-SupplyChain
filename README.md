@@ -128,21 +128,17 @@ Model evaluation metrics will be stored in the results/ folder.
 
 Key recommendations based on analysis:
 
-1️⃣ Avoid dispatching trucks during peak hours
+**1️⃣ Distance is the strongest predictor of delivery time**  
+Longer distances increase delivery time, but the relationship is non-linear — suggesting opportunities for route optimization.
 
-Predictive models show delays spike during morning and evening rush hours.
+**2️⃣ Morning and evening peak traffic create the largest delays**  
+Deliveries during 7–10 AM and 4–7 PM consistently face higher delays.
 
-2️⃣ Optimize routing for short-distance deliveries
+**3️⃣ Short-distance deliveries show unexpected delays during peak hours**  
+This indicates that congestion, not distance, is the main contributor to delays during rush hours.
 
-Short trips show high delay variability → route planning should be adjusted.
-
-3️⃣ Use ML predictions to set customer expectations
-
-Improved ETA accuracy reduces uncertainty and increases satisfaction.
-
-4️⃣ Better warehouse scheduling
-
-Predictive forecasts help determine when to load trucks to avoid bottlenecks.
+**4️⃣ Gradient Boosting and Random Forest outperform Linear Regression**  
+Tree-based models provide higher prediction accuracy and are better suited for real-world ETA forecasting.
 
 🎯 Business Impact for Daxwell
 
